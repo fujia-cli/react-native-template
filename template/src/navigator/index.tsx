@@ -46,13 +46,7 @@ export const Navigator = () => {
             component={BottomTabs}
           />
 
-          <Stack.Screen
-            options={{
-              headerShown: false,
-            }}
-            name="Search"
-            component={SearchScreen}
-          />
+
           <Stack.Screen
             options={{
               headerShown: false,

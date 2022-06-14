@@ -1,10 +1,10 @@
-import React from "react";
-import { StyleSheet } from "react-native";
-import { Provider } from "react-redux";
-import { SafeAreaProvider } from "react-native-safe-area-context";
+import React from 'react';
+import {StyleSheet} from 'react-native';
+import {Provider} from 'react-redux';
+import {SafeAreaProvider} from 'react-native-safe-area-context';
 
-import { Navigator } from "@/navigator/index";
-import { store } from "@/store/index";
+import {store} from '@/store/index';
+import {Navigator} from '@/navigator/index';
 
 export const App = () => {
   return (
@@ -19,6 +19,6 @@ export const App = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
+    backgroundColor: '#fff',
   },
 });

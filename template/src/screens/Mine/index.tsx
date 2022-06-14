@@ -6,7 +6,6 @@ import {SafeAreaView} from 'react-native-safe-area-context';
 import type {MyBottomTabScreenProps, StackRouteNames} from '@/navigator/types';
 import {IconStar, IconInfo, IconEmpty, IconCreation, IconRead} from '@/assets/icons/index';
 import {useAppSelector} from '@/store/hooks';
-import {selectUserProfile} from '@/store/global.slice';
 import {FocusAwareStatusBar} from '@/components/FocusAwareStatusBar';
 // import {delToken} from '@/utils/index';
 
@@ -14,7 +13,6 @@ const DEFAULT_SIGNATURE = '因为相信 所以看见';
 
 export const MineScreen = () => {
   const navigation = useNavigation<MyBottomTabScreenProps<'Mine'>['navigation']>();
-  const userProfile = useAppSelector(selectUserProfile);
 
   const handleLinkScreen = (screenName: StackRouteNames) => {
     return () => {
@@ -26,65 +24,14 @@ export const MineScreen = () => {
     <SafeAreaView style={styles.container}>
       <FocusAwareStatusBar backgroundColor="#007fff" barStyle="light-content" />
       <View style={styles.ornamental} />
-
       <View style={styles.header}>
-        {userProfile === null ? (
-          <>
-            <Pressable onPress={handleLinkScreen('Login')}>
-              <View style={styles.avatarOccupy}>
-                <IconRead size={40} color="#007fff" />
-              </View>
-              <Text style={styles.loginText}>点击登录</Text>
-            </Pressable>
-            <Text style={styles.slogan}>ALL FROM LOVE</Text>
-          </>
-        ) : (
-          <>
-            <Pressable onPress={handleLinkScreen('UserProfile')}>
-              <Image
-                style={styles.avatar}
-                source={{
-                  uri: userProfile.avatar,
-                }}
-              />
-            </Pressable>
-            <View style={styles.profile}>
-              <Text style={styles.nickname}>昵称: {userProfile?.nickname}</Text>
-              <Text style={styles.signature}>{userProfile?.workInfo?.signature || DEFAULT_SIGNATURE}</Text>
-            </View>
-          </>
-        )}
-      </View>
-
-      <View style={styles.main}>
-        <Text style={styles.subtitle}>基本功能</Text>
-        <View style={styles.grid}>
-          <Pressable style={styles.gridItem} onPress={handleLinkScreen('UserCollection')}>
-            <View style={styles.gridIcon}>
-              <IconStar size={24} />
-            </View>
-            <Text style={styles.gridItemText}>我的收藏</Text>
-          </Pressable>
-
-          <Pressable style={styles.gridItem} onPress={handleLinkScreen('UserFeedback')}>
-            <View style={styles.gridIcon}>
-              <IconCreation size={24} />
-            </View>
-            <Text style={styles.gridItemText}>我要反馈</Text>
-          </Pressable>
-          <Pressable style={styles.gridItem}>
-            <View style={styles.gridIcon}>
-              <IconEmpty size={24} />
-            </View>
-            <Text style={styles.gridItemText}>清理缓存</Text>
-          </Pressable>
-          <Pressable style={styles.gridItem} onPress={handleLinkScreen('AboutCogito')}>
-            <View style={styles.gridIcon}>
-              <IconInfo size={24} />
-            </View>
-            <Text style={styles.gridItemText}>关于Cogito</Text>
-          </Pressable>
-        </View>
+        <Pressable onPress={handleLinkScreen('Login')}>
+          <View style={styles.avatarOccupy}>
+            <IconRead size={40} color="#007fff" />
+          </View>
+          <Text style={styles.loginText}>点击登录</Text>
+        </Pressable>
+        <Text style={styles.slogan}>ALL FROM LOVE</Text>
       </View>
     </SafeAreaView>
   );

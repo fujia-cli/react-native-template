@@ -10,7 +10,6 @@ import {HeaderLogo} from '@/components/HeaderLogo';
 import {RootStackScreenProps, StackRouteNames} from '@/navigator/types';
 import {asyncSignIn} from './service.account';
 import {useAppDispatch} from '@/store/hooks';
-import {fetchUserProfile} from '@/store/global.slice';
 
 export const LoginScreen = () => {
   const navigation = useNavigation<RootStackScreenProps<'Login'>['navigation']>();
@@ -20,7 +19,6 @@ export const LoginScreen = () => {
   const [loginErr, setLoginErr] = useState('');
   const pwdRef = useRef<TextInput | null>(null);
   const {run, isLoading} = useAsync();
-  const dispatch = useAppDispatch();
 
   const disabledLogin = !agreed || !account || !password;
 
@@ -62,15 +60,6 @@ export const LoginScreen = () => {
     if (!account || !password) {
       return;
     }
-
-    run(asyncSignIn(account, password)).then(data => {
-      if (data === true) {
-        dispatch(fetchUserProfile());
-        navigation.goBack();
-      } else if (data?.error) {
-        setLoginErr(data?.msg);
-      }
-    });
   };
 
   return (

@@ -40,7 +40,9 @@ export const PrivacyPolicyScreen = () => {
         <Text style={styles.paragraph}>
           我们的服务包括核心业务功能和附加功能。我们的服务包括一些核心业务功能，这些功能包含了实现获取优质的网购优惠信息、使用信息发布服务所必须的功能，改进我们提供的信息分发、推荐及其他服务所必须的功能，保障网站安全所必须的功能及客服与账号申诉、举报投诉功能等。我们可能会收集、使用下列与您有关的信息才能实现上述这些功能，如果您不提供相关信息，您可能无法享受我们提供的部分服务。
         </Text>
-        <Text style={styles.paragraph}>1、实现获取优质的网购优惠信息、使用信息发布服务所必须的功能</Text>
+        <Text style={styles.paragraph}>
+          1、实现获取优质的网购优惠信息、使用信息发布服务所必须的功能
+        </Text>
         <Text style={styles.paragraph}>
           （1）您使用“Cogito”提供的服务，可以注册并登录经注册的“Cogito”账号。当你注册“Cogito”账号时，您需向我们提供您的昵称、头像（如有）、手机号码等信息，我们将通过发送短信验证码的方式来验证您的身份是否有效。手机号码属于敏感信息，收集此类信息是为了满足相关法律法规的网络实名制要求。如您拒绝提供手机号码或进行实名验证，您仍可浏览“Cogito”平台的内容、通过“Cogito”平台内容链接购买商品，但将无法使用信息发布服务等其他全部或部分“Cogito”提供的服务。您可以修改补充您的昵称、电子邮箱、手机号码、个人简介等相关信息。您补充的信息将有助于我们为您提供个性化的商品推荐和更优质的服务体验，但如果您不提供这些补充信息，不会影响您使用“Cogito”平台的核心业务功能。
         </Text>
@@ -70,7 +72,8 @@ export const PrivacyPolicyScreen = () => {
           为使您获得更优质的服务，提升您的使用体验，我们的以下附加功能中可能会收集和使用您的个人信息，您可以选择是否开通和使用这些附加功能。如果您不提供这些个人信息，您依然可以使用“Cogito”平台的核心业务功能，但您可能无法使用部分附加功能。
         </Text>
         <Text style={styles.paragraph}>
-          三）征得授权同意的例外 根据相关法律法规的规定，以下情形中收集您的个人信息无需征得您的授权同意:
+          三）征得授权同意的例外
+          根据相关法律法规的规定，以下情形中收集您的个人信息无需征得您的授权同意:
         </Text>
         <Text style={styles.paragraph}>（1）与国家安全、国防安全直接相关的；</Text>
         <Text style={styles.paragraph}>（2）与公共安全、公共卫生、重大公共利益直接相关的；</Text>
@@ -143,7 +146,9 @@ export const PrivacyPolicyScreen = () => {
         <Text style={styles.paragraph}>
           4、与授权合作伙伴共享：我们可能会与授权合作伙伴共享您的某些个人信息，以提供更好的客户服务和用户体验。例如，我们向您寄送礼品（如有）时，我们必须与物流服务提供商共享您的个人信息才能安排寄送，或者安排合作伙伴提供服务。我们仅会出于合法、正当、必要、特定、明确的目的共享您的个人信息，并且只会共享提供服务所必要的个人信息。
         </Text>
-        <Text style={styles.paragraph}>目前，我们的授权合作伙伴主要包括以下类型（包含中国境内和中国境外实体）：</Text>
+        <Text style={styles.paragraph}>
+          目前，我们的授权合作伙伴主要包括以下类型（包含中国境内和中国境外实体）：
+        </Text>
         <Text style={styles.paragraph}>
           （1）广告、分析服务类的授权合作伙伴。例如，由于“Cogito”平台上可能包含第三方推广信息，为监测推广信息投放效果，如您浏览或点击该等第三方推广信息，我们可能允许该第三方收集您的用户ID、个人上网记录、个人常用设备信息、IP地址、网络类型、网络运营商等信息；同时，我们会授权第三方数据统计、分析机构获取用户ID、性别、年龄、籍贯、个人上网记录、个人常用设备信息、交易记录、IP地址等信息，向我们提供网站访问数据统计和分析服务；我们的授权合作伙伴也可能将我们向其提供的信息与其数据库中的信息进行匹配和分析，并向我们返回分析结果。
         </Text>
@@ -153,7 +158,9 @@ export const PrivacyPolicyScreen = () => {
         <Text style={styles.paragraph}>
           对我们与之共享个人信息的公司、组织和个人，我们会与其签署相应的保密协定，如获取您个人信息的公司、组织或个人超出本政策规定使用您个人信息的，其应当另行取得您的授权同意。
         </Text>
-        <Text style={styles.paragraph}>我们不会将您的个人信息转让给任何公司、组织和个人，但以下情况除外：</Text>
+        <Text style={styles.paragraph}>
+          我们不会将您的个人信息转让给任何公司、组织和个人，但以下情况除外：
+        </Text>
         <Text style={styles.paragraph}>（二）转让 </Text>
         <Text style={styles.paragraph}>
           2、在涉及合并、收购或破产清算时，如涉及到个人信息转让，我们会要求新的持有您个人信息的公司、组织继续受本政策的约束，否则我们将要求该公司、组织重新向您征求授权同意。
@@ -193,8 +200,12 @@ export const PrivacyPolicyScreen = () => {
         </Text>
         <Text style={styles.paragraph}>（1）适用的法律有明确规定；</Text>
         <Text style={styles.paragraph}>（2）获得您的单独同意；</Text>
-        <Text style={styles.paragraph}>（3）您作为一方当事人的跨境电子商务交易及其他类型合同定力和履行所必需的。</Text>
-        <Text style={styles.paragraph}>针对以上情形，我们会按照本政策衣服保护您的个人信息安全。</Text>
+        <Text style={styles.paragraph}>
+          （3）您作为一方当事人的跨境电子商务交易及其他类型合同定力和履行所必需的。
+        </Text>
+        <Text style={styles.paragraph}>
+          针对以上情形，我们会按照本政策衣服保护您的个人信息安全。
+        </Text>
         <Text style={styles.paragraph}>五、您的权利</Text>
         <Text style={styles.paragraph}>
           我们非常重视您对个人信息的关注，并尽全力保护您对于您个人信息访问、更正、删除以及注销账号的权利，以使您拥有充分的能力保障您的隐私和安全。您的权利包括：
@@ -212,12 +223,16 @@ export const PrivacyPolicyScreen = () => {
         <Text style={styles.paragraph}>
           如果您无法通过上述方式访问、更正或删除您的个人信息，或您需要访问、更正或删除您在使用我们服务时所产生的其他个人信息，或您认为我们存在任何违反法律法规或与您关于个人信息的收集使用的约定，您均可以通过“Cogito”平台的“在线客服”（APP端）与我们联系。为了保障安全，我们可能需要您提供书面请求，或以其他方式证明您的身份，我们将在收到您反馈并验证您的身份后的30天内答复您的请求。对于您合理的请求，我们原则上不收取费用，但对多次重复、超出合理限度的请求，我们将视情形收取一定成本费用。对于那些无端重复、需要过多技术手段（例如需要开发新系统或从根本上改变现行惯例等）、给他人合法权益带来风险或者非常不切实际（例如涉及备份磁带上存放的信息等）的请求，我们可能会予以拒绝。
         </Text>
-        <Text style={styles.paragraph}>在以下情形中，按照法律法规要求，我们将无法响应您的请求：</Text>
+        <Text style={styles.paragraph}>
+          在以下情形中，按照法律法规要求，我们将无法响应您的请求：
+        </Text>
         <Text style={styles.paragraph}>（1）与国家安全、国防安全直接相关的；</Text>
         <Text style={styles.paragraph}>（2）与公共安全、公共卫生、重大公共利益直接相关的；</Text>
         <Text style={styles.paragraph}>（3）与犯罪侦查、起诉、审判和判决执行等直接相关的；</Text>
         <Text style={styles.paragraph}>（4）有充分证据表明您存在主观恶意或滥用权利的；</Text>
-        <Text style={styles.paragraph}>（5）响应您的请求将导致您或其他个人、组织的合法权益受到严重损害的；</Text>
+        <Text style={styles.paragraph}>
+          （5）响应您的请求将导致您或其他个人、组织的合法权益受到严重损害的；
+        </Text>
         <Text style={styles.paragraph}>（6）涉及商业秘密的。</Text>
         <Text style={styles.paragraph}>六、第三方提供商及其服务</Text>
         <Text style={styles.paragraph}>
@@ -242,8 +257,12 @@ export const PrivacyPolicyScreen = () => {
           2、我们在所有权结构、组织架构等方面发生重大变化。如业务调整、破产并购等引起的所有者变更等；
         </Text>
         <Text style={styles.paragraph}>3、个人信息共享、转让或公开披露的主要对象发生变化；</Text>
-        <Text style={styles.paragraph}>4、您参与个人信息处理方面的权利及其行使方式发生重大变化；</Text>
-        <Text style={styles.paragraph}>5、我们负责处理个人信息安全的责任部门、联络方式及投诉渠道发生变化时；</Text>
+        <Text style={styles.paragraph}>
+          4、您参与个人信息处理方面的权利及其行使方式发生重大变化；
+        </Text>
+        <Text style={styles.paragraph}>
+          5、我们负责处理个人信息安全的责任部门、联络方式及投诉渠道发生变化时；
+        </Text>
         <Text style={styles.paragraph}>6、个人信息安全影响评估报告表明存在高风险时。</Text>
         <Text style={styles.paragraph}>
           若您不同意修改后的隐私政策，您有权并应立即停止使用“Cogito”的服务。如果您继续使用“Cogito”服务，则视为您接受我们对本政策相关条款所做的修改。

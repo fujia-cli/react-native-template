@@ -33,7 +33,9 @@ export const UserAgreementScreen = () => {
         <Text style={styles.text}>
           1、您不得使用本产品发送或传播任何妨碍社会治安或非法、虚假、骚扰性、侮辱性、恐吓性、伤害性、破坏性、挑衅性、淫秽色情性等内容的信息。
         </Text>
-        <Text style={styles.text}>2、您不得使用本产品发送或传播敏感信息和违反国家法律制度的信息。</Text>
+        <Text style={styles.text}>
+          2、您不得使用本产品发送或传播敏感信息和违反国家法律制度的信息。
+        </Text>
         <Text style={styles.text}>
           3、您保证以真实的身份注册使用我们的产品，向我们所提供的个人身份资料信息真实、完整、有效，依据法律规定和约定对所提供的信息承担相应的法律责任。如果资料发生变化，您应及时更改。我们会及时、有效地提供该项服务。在安全完成本协议的登记程序后，您应维持密码及账号的机密安全。您应对任何人利用您的密码及账号所进行的活动负完全的责任，我们无法对非法或未经您授权使用您账号及密码的行为做出甄别，因此本应用不承担任何责任。
         </Text>
@@ -48,7 +50,9 @@ export const UserAgreementScreen = () => {
           为了保障业务发展和调整的自主权，本应用拥有随时修改或中断服务而不需通知您的权利，我们行使修改或中断服务的权利不需对您或任何第三方负责。您必须在同意本条款的前提下，本应用才开始对您提供服务。
         </Text>
         <Text style={styles.title}>四、适用法律</Text>
-        <Text style={styles.text}>本服务条款的解释，效力及纠纷的解决，适用于中华人民共和国大陆法律。</Text>
+        <Text style={styles.text}>
+          本服务条款的解释，效力及纠纷的解决，适用于中华人民共和国大陆法律。
+        </Text>
         <View style={styles.footer} />
       </ScrollView>
     </SafeAreaView>

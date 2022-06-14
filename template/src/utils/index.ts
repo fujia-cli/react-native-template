@@ -1,35 +1,28 @@
-import uuid from "react-native-uuid";
-import DeviceInfo from "react-native-device-info";
-import { Dimensions, StatusBar, Platform } from "react-native";
+import uuid from 'react-native-uuid';
+import DeviceInfo from 'react-native-device-info';
+import {Dimensions, StatusBar, Platform} from 'react-native';
 
-import { reduxStorage, storage } from "./storage";
-import { IDENTITY_ID_KEY, TOKEN_KEY } from "./constants";
+import {reduxStorage, storage} from './storage';
+import {IDENTITY_ID_KEY, TOKEN_KEY} from './constants';
 
-const { width: viewportWidth, height: viewportHeight } = Dimensions.get("window");
+const {width: viewportWidth, height: viewportHeight} = Dimensions.get('window');
 
 const percentToWidth = (percent: number) => Math.round(percent * viewportWidth);
 
 const percentToHeight = (percent: number) => Math.round(percent * viewportHeight);
 
 const mockAsync = (timeout = 3000) =>
-  new Promise((resolve) => {
+  new Promise(resolve => {
     setTimeout(resolve, timeout);
   });
 
 const statusBarHeight = StatusBar.currentHeight;
 
-export {
-  viewportWidth,
-  viewportHeight,
-  statusBarHeight,
-  percentToWidth,
-  percentToHeight,
-  mockAsync,
-};
+export {viewportWidth, viewportHeight, statusBarHeight, percentToWidth, percentToHeight, mockAsync};
 
 export const genOrGetIdentityId = async () => {
   // unique user labeling
-  let identityId = "";
+  let identityId = '';
 
   const hasIdentityId = storage.contains(IDENTITY_ID_KEY);
 
@@ -67,9 +60,9 @@ export const getDeviceInfo = async () => {
   return deviceInfo;
 };
 
-export const isAndroid = Platform.OS === "android" ? true : false;
+export const isAndroid = Platform.OS === 'android' ? true : false;
 
-export const isIOS = Platform.OS === "ios" ? true : false;
+export const isIOS = Platform.OS === 'ios' ? true : false;
 
 export const setToken = async (token: string) => {
   try {

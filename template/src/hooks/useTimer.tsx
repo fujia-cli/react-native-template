@@ -8,7 +8,13 @@ interface TimeOptions {
   mode?: 'forward' | 'backward';
 }
 
-export const useTimer = ({start, stop, interval = 1000, step = 1, mode = 'forward'}: TimeOptions) => {
+export const useTimer = ({
+  start,
+  stop,
+  interval = 1000,
+  step = 1,
+  mode = 'forward',
+}: TimeOptions) => {
   const [time, setTime] = useState<number>(start);
   const [timerStatus, setTimerStatus] = useState<'idle' | 'timing' | 'done'>('idle');
   const timerRef = useRef<NodeJS.Timer | null>(null);

@@ -1,4 +1,4 @@
-export interface RequestResponse<T = any> extends Omit<Partial<ErrorResponse>, "data" | "success"> {
+export interface RequestResponse<T = any> extends Omit<Partial<ErrorResponse>, 'data' | 'success'> {
   success: boolean;
   data?: T;
 }

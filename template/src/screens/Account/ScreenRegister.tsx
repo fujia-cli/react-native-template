@@ -7,10 +7,8 @@ import {SafeAreaView} from 'react-native-safe-area-context';
 import {BackButton} from '@/components/BackButton';
 import {HeaderLogo} from '@/components/HeaderLogo';
 import {MyBottomTabScreenProps, StackRouteNames} from '@/navigator/types';
-import {asyncCheckEmail, asyncSendVerifyCodeByEmail, asyncRegisterByEmail} from './service.account';
 import {useTimer} from '@/hooks/useTimer';
 import {useAppDispatch} from '@/store/hooks';
-import {fetchUserProfile} from '@/store/global.slice';
 
 type CheckStatus = 'Pending' | 'EmailChecked' | 'CodeChecked' | 'PasswordChecked';
 
@@ -21,8 +19,6 @@ export const RegisterScreen = () => {
   const [code, setCode] = useState<string | undefined>(undefined);
   const [password, setPassword] = useState<string | undefined>(undefined);
   const {time, timerStatus, startTiming} = useTimer({start: 60, stop: 1, mode: 'backward'});
-  const {run} = useAsync();
-  const dispatch = useAppDispatch();
 
   const handleLinkScreen = (screenName: StackRouteNames) => {
     return () => {
@@ -38,20 +34,10 @@ export const RegisterScreen = () => {
     if (!email) {
       return;
     }
-    run(asyncCheckEmail(email)).then(val => {
-      if (val) {
-        setCheckStatus('EmailChecked');
-      }
-    });
   };
 
   const handleObtainVerifyCode = () => {
     startTiming();
-    run(asyncSendVerifyCodeByEmail(email!)).then(val => {
-      if (val) {
-        Alert.alert('发送成功');
-      }
-    });
   };
 
   const handleSubmitCode = () => {
@@ -66,19 +52,6 @@ export const RegisterScreen = () => {
     if (!email || !password || !code) {
       return;
     }
-
-    run(
-      asyncRegisterByEmail({
-        account: email,
-        password,
-        verifyCode: code,
-      }),
-    ).then(done => {
-      if (done) {
-        navigation.pop(2);
-        dispatch(fetchUserProfile());
-      }
-    });
   };
 
   return (

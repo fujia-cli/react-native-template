@@ -2,18 +2,6 @@ import {request} from '@/utils/request';
 import {RequestResponse} from '@/services/serviceTypes';
 import {setToken} from '@/utils/index';
 
-// export /**
-//  * 用户登录
-//  *
-//  * @param {{account: string, password: string, remember: ?boolean}} data - 入参
-//  */
-// const signIn = (data) =>
-//   fetch({
-//     url: '/users/login',
-//     method: 'post',
-//     data,
-//   })
-
 export const asyncSignIn = async (account: string, password: string) => {
   try {
     const res = await request<
