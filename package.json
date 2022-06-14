@@ -1,6 +1,6 @@
 {
   "name": "@fujia/react-native-template",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A template for react native which build with TypeScript",
   "keywords": [
     "template",
