@@ -5,21 +5,13 @@ import {HomeScreen} from '@/screens/Home';
 import {MineScreen} from '@/screens/Mine';
 import {IconHome, IconMine} from '@/assets/icons';
 import {useAppDispatch, useAppSelector} from '@/store/hooks';
-import {fetchUserProfile, selectUserProfile} from '@/store/global.slice';
+
 import {getToken} from '@/utils/index';
 
 const Tab = createBottomTabNavigator();
 
 export const BottomTabs = () => {
   const dispatch = useAppDispatch();
-  const userProfile = useAppSelector(selectUserProfile);
-
-  useEffect(() => {
-    if (!userProfile && getToken()) {
-      dispatch(fetchUserProfile());
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
 
   return (
     <Tab.Navigator
@@ -34,7 +26,7 @@ export const BottomTabs = () => {
       }}>
       <Tab.Screen
         name="Home"
-        component={Home}
+        component={HomeScreen}
         options={{
           tabBarLabel: '首页',
           tabBarIcon: ({color, size}) => <IconHome color={color} size={size} />,

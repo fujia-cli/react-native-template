@@ -1,7 +1,10 @@
 import React from 'react';
 import {Text, StyleSheet, StatusBar} from 'react-native';
 import {NavigationContainer, createNavigationContainerRef} from '@react-navigation/native';
-import {createNativeStackNavigator, NativeStackNavigationProp} from '@react-navigation/native-stack';
+import {
+  createNativeStackNavigator,
+  NativeStackNavigationProp,
+} from '@react-navigation/native-stack';
 
 import {UserAgreementScreen} from '@/screens/Account/ScreenAgreement';
 import {LoginScreen} from '@/screens/Account/ScreenLogin';
@@ -46,7 +49,6 @@ export const Navigator = () => {
             component={BottomTabs}
           />
 
-
           <Stack.Screen
             options={{
               headerShown: false,
@@ -83,6 +85,7 @@ export const Navigator = () => {
             component={PrivacyPolicyScreen}
           />
         </Stack.Group>
+      </Stack.Navigator>
     </NavigationContainer>
   );
 };
