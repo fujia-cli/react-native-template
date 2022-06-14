@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="210px" height="192px" viewBox="0 0 210 192" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>empty</title>
+    <defs>
+        <polygon id="path-1" points="0 0 210 0 210 192 0 192"></polygon>
+        <linearGradient x1="100%" y1="49.9967232%" x2="0%" y2="49.9967232%" id="linearGradient-3">
+            <stop stop-color="#CCCCCC" offset="0%"></stop>
+            <stop stop-color="#EBEBEB" offset="99%"></stop>
+        </linearGradient>
+        <linearGradient x1="50.0253421%" y1="-0.125628141%" x2="50.0253421%" y2="99.8743719%" id="linearGradient-4">
+            <stop stop-color="#E2E2E2" offset="0%"></stop>
+            <stop stop-color="#F7F7F7" offset="99%"></stop>
+        </linearGradient>
+        <linearGradient x1="49.9908542%" y1="0%" x2="49.9908542%" y2="100%" id="linearGradient-5">
+            <stop stop-color="#E2E2E2" offset="0%"></stop>
+            <stop stop-color="#F7F7F7" offset="99%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="-3.57056651e-13%" x2="50%" y2="100%" id="linearGradient-6">
+            <stop stop-color="#E2E2E2" offset="0%"></stop>
+            <stop stop-color="#F7F7F7" offset="99%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="-3.57056651e-13%" x2="50%" y2="100%" id="linearGradient-7">
+            <stop stop-color="#E2E2E2" offset="0%"></stop>
+            <stop stop-color="#F7F7F7" offset="99%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="50.1246883%" x2="100%" y2="50.1246883%" id="linearGradient-8">
+            <stop stop-color="#EBEBEB" offset="0%"></stop>
+            <stop stop-color="#F7F7F7" offset="99%"></stop>
+        </linearGradient>
+        <linearGradient x1="49.9501496%" y1="100%" x2="49.9501496%" y2="-1.71483706e-14%" id="linearGradient-9">
+            <stop stop-color="#EBEBEB" offset="0%"></stop>
+            <stop stop-color="#F7F7F7" offset="99%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="50.0062197%" x2="100%" y2="50.0062197%" id="linearGradient-10">
+            <stop stop-color="#EBEBEB" offset="0%"></stop>
+            <stop stop-color="#F7F7F7" offset="99%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="50.0484027%" x2="100%" y2="50.0484027%" id="linearGradient-11">
+            <stop stop-color="#EBEBEB" offset="0%"></stop>
+            <stop stop-color="#F7F7F7" offset="99%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="49.9515973%" x2="100%" y2="49.9515973%" id="linearGradient-12">
+            <stop stop-color="#EBEBEB" offset="0%"></stop>
+            <stop stop-color="#F7F7F7" offset="99%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="50.0484027%" x2="99.9837478%" y2="50.0484027%" id="linearGradient-13">
+            <stop stop-color="#EBEBEB" offset="0%"></stop>
+            <stop stop-color="#F7F7F7" offset="99%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="50.0484027%" x2="100%" y2="50.0484027%" id="linearGradient-14">
+            <stop stop-color="#EBEBEB" offset="0%"></stop>
+            <stop stop-color="#F7F7F7" offset="99%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="empty">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="路径"></g>
+            <g id="layout" mask="url(#mask-2)" fill-rule="nonzero">
+                <g transform="translate(0.000000, 0.500000)">
+                    <rect id="矩形" stroke="none" fill="url(#linearGradient-3)" x="22.44" y="8.95" width="122.58" height="152.59" rx="10.69"></rect>
+                    <rect id="矩形" stroke="#EBEBEB" stroke-width="1" fill="#FFFFFF" x="31.49" y="0" width="122.58" height="159.25" rx="10.92"></rect>
+                    <polygon id="路径" stroke="none" fill="url(#linearGradient-4)" transform="translate(129.750000, 134.820000) rotate(-90.000000) translate(-129.750000, -134.820000) " points="110.02 130.84 149.48 130.84 149.48 138.8 110.02 138.8"></polygon>
+                    <polygon id="路径" stroke="none" fill="url(#linearGradient-5)" transform="translate(144.740000, 127.215000) rotate(-90.000000) translate(-144.740000, -127.215000) " points="117.405 123.235 172.075 123.235 172.075 131.195 117.405 131.195"></polygon>
+                    <polygon id="路径" stroke="none" fill="url(#linearGradient-6)" transform="translate(160.240000, 138.800000) rotate(-90.000000) translate(-160.240000, -138.800000) " points="144.49 134.82 175.99 134.82 175.99 142.78 144.49 142.78"></polygon>
+                    <polygon id="路径" stroke="none" fill="url(#linearGradient-7)" transform="translate(177.240000, 132.050000) rotate(-90.000000) translate(-177.240000, -132.050000) " points="154.74 128.07 199.74 128.07 199.74 136.03 154.74 136.03"></polygon>
+                    <polygon id="路径" stroke="none" fill="#E2E2E2" points="160.13 111.98 144.65 86.84 129.07 102.16 128.37 101.44 144.84 85.25 160.36 110.45 183.88 88.95 184.54 89.71 160.13 111.98"></polygon>
+                    <path d="M152.31,42.63 L154.09,49.3 L160.69,51.1 L154.09,52.9 L152.31,59.57 L150.54,52.9 L143.94,51.1 L150.54,49.3 L152.31,42.63 Z M174.1,12.96 L176.94,23.65 L187.5,26.52 L176.94,29.4 L174.1,40.08 L171.25,29.4 L160.69,26.52 L171.25,23.65 L174.1,12.96 L174.1,12.96 Z" id="形状" stroke="none" fill="#F7F7F7"></path>
+                    <rect id="矩形" stroke="none" fill="url(#linearGradient-8)" x="0" y="162.7" width="165.74" height="4.01" rx="2"></rect>
+                    <rect id="矩形" stroke="none" fill="url(#linearGradient-9)" transform="translate(122.570000, 179.755000) rotate(90.000000) translate(-122.570000, -179.755000) " x="117.555" y="96.885" width="10.03" height="165.74" rx="5"></rect>
+                    <rect id="矩形" stroke="none" fill="url(#linearGradient-10)" transform="translate(66.005000, 172.230000) rotate(90.000000) translate(-66.005000, -172.230000) " x="65.505" y="132.035" width="1" height="80.39" rx="0.5"></rect>
+                    <rect id="矩形" stroke="none" fill="url(#linearGradient-10)" transform="translate(163.265000, 169.220000) rotate(90.000000) translate(-163.265000, -169.220000) " x="162.765" y="129.025" width="1" height="80.39" rx="0.5"></rect>
+                    <polygon id="路径" stroke="none" fill="url(#linearGradient-11)" points="43.23 24.46 113.56 24.46 113.56 34.79 43.23 34.79"></polygon>
+                    <polygon id="路径" stroke="none" fill="url(#linearGradient-12)" points="43.23 46.13 113.56 46.13 113.56 56.46 43.23 56.46"></polygon>
+                    <polygon id="路径" stroke="none" fill="url(#linearGradient-13)" points="43.23 67.79 104.76 67.79 104.76 78.12 43.23 78.12"></polygon>
+                    <polygon id="路径" stroke="none" fill="url(#linearGradient-14)" points="43.23 119.13 68.5 119.13 68.5 129.46 43.23 129.46"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
