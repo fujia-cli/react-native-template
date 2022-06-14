@@ -1,5 +1,13 @@
 import React, {FC, PropsWithChildren} from 'react';
-import {ModalBaseProps, StyleSheet, Modal, View, Pressable, StyleProp, ViewProps} from 'react-native';
+import {
+  ModalBaseProps,
+  StyleSheet,
+  Modal,
+  View,
+  Pressable,
+  StyleProp,
+  ViewProps,
+} from 'react-native';
 
 interface Props extends ModalBaseProps {
   onClose: VoidFunction;

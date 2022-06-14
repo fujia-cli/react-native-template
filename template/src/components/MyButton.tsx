@@ -41,7 +41,9 @@ export const MyButton: FC<Props> = props => {
       {...pressableProps}
       disabled={disabled}
       style={[styles.container, style, disabled ? disabledStyle : null]}>
-      {loading && <ActivityIndicator color={indicatorColor} size={indicatorSize} style={styles.indicator} />}
+      {loading && (
+        <ActivityIndicator color={indicatorColor} size={indicatorSize} style={styles.indicator} />
+      )}
       <Text style={[styles.text, labelStyle]}>{label}</Text>
       {icon}
     </Pressable>
