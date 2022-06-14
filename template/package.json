@@ -17,7 +17,7 @@
   "dependencies": {
     "@fujia/fetch": "^0.6.2",
     "@fujia/hammer": "^1.0.0",
-    "@fujia/hooks": "^0.2.5",
+    "@fujia/hooks": "^0.3.0",
     "@react-navigation/bottom-tabs": "^6.3.1",
     "@react-navigation/material-top-tabs": "^6.2.1",
     "@react-navigation/native": "^6.0.10",
